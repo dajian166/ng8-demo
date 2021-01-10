@@ -1,5 +1,5 @@
-import { Injectable } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class CartService {
@@ -23,6 +23,6 @@ export class CartService {
    * 获取运输价格
    */
   getShippingPrices() {
-    return this.http.get("/assets/shipping.json");
+    return this.http.get('./assets/shipping.json');
   }
 }

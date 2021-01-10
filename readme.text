@@ -1,3 +1,4 @@
+ng build --watch
 
 一发布到 GitHub pages
 
@@ -10,3 +11,4 @@ ng build --prod --output-path docs --base-href /ng8-demo/
 当构建完成时，把 docs/index.html 复制为 docs/404.html
 提交你的更改，并推送。
 在 GitHub 的项目页中，把该项目配置为从 docs 目录下发布
+https://dajian166.github.io/ng8-demo/ 
