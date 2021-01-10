@@ -1,0 +1,12 @@
+
+一发布到 GitHub pages
+
+git branch -M main
+git remote add origin git@github.com:dajian166/ng8-demo.git
+git push -u origin main
+
+使用 Angular CLI 命令 ng build 来构建这个 GitHub 项目，选项如下:
+ng build --prod --output-path docs --base-href /ng8-demo/
+当构建完成时，把 docs/index.html 复制为 docs/404.html
+提交你的更改，并推送。
+在 GitHub 的项目页中，把该项目配置为从 docs 目录下发布
