@@ -12,6 +12,8 @@ import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { CartService } from './cart/cart.service';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TestFlyInComponent } from './test-fly-in/test-fly-in.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    TestFlyInComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule
