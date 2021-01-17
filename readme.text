@@ -1,14 +1,14 @@
-ng build --watch
+[组件]内容投影
+    1. 模板里面的 <ng-content>，可以把它想象成一个占位符，用它来先占住一块空间，
+等使用方把参数传递进来之后，再用真实的内容来替换它。
+    2. <ng-content>的select 参数，其作用和 CSS 选择器非常类似。这种投影多块内容的方式叫“多插槽模式”（multi-slot），
+你可以把 <ng-content> 想形成一个一个的插槽，内容会被插入到这些插槽里面。
+    3. 投影一个复杂的组件<ng-content select="test-child-three"></ng-content>， 
+把 select 属性设置成了子组件的名称。
+内容投影这个特性存在的意义：
+    1. 如果没有内容投影，组件标签不能嵌套使用；不能优雅地包装原生的 HTML 标签。
+    2. 内容投影存在的第二个意义与组件的封装有关，自定义标签和HTML原生标签之间的关系是什么呢？本质上说，这是“装饰模式”的一种应用
 
-一发布到 GitHub pages
-
-git branch -M main
-git remote add origin git@github.com:dajian166/ng8-demo.git
-git push -u origin main
-
-使用 Angular CLI 命令 ng build 来构建这个 GitHub 项目，选项如下:
-ng build --prod --output-path docs --base-href /ng8-demo/
-当构建完成时，把 docs/index.html 复制为 docs/404.html
-提交你的更改，并推送。
-在 GitHub 的项目页中，把该项目配置为从 docs 目录下发布
-https://dajian166.github.io/ng8-demo/ 
+@ContentChild 和 @ContentChildren
+@ContentChild 这个装饰器来操控被投影进来的组件
+@ContentChildren 是一个复数形式。当被投影进来的是一个组件列表的时候，我们可以用来进行操控。

@@ -1,0 +1,7 @@
+<nz-card style="width:800px;" nzTitle="内容投影">
+  <app-child-two>
+    <h3>这是父层投影进来的内容</h3>
+    <p class="my-class">利用CSS选择器</p>
+    <app-child-three (sayhello)="doSomething($event)"></app-child-three>
+  </app-child-two>
+</nz-card>
