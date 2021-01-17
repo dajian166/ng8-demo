@@ -12,6 +12,9 @@ const routes: Routes = [
   }, {
     path: 'my-contentchild',
     loadChildren: () => import('./pages/my-contentchild/my-contentchild.module').then(m => m.MyContentchildModule)
+  }, {
+    path: 'my-viewchild',
+    loadChildren: () => import('./pages/my-viewchild/my-viewchild.module').then(m => m.MyViewchildModule)
   }
 ];
 

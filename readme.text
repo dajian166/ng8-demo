@@ -10,5 +10,8 @@
     2. 内容投影存在的第二个意义与组件的封装有关，自定义标签和HTML原生标签之间的关系是什么呢？本质上说，这是“装饰模式”的一种应用
 
 @ContentChild 和 @ContentChildren
-@ContentChild 这个装饰器来操控被投影进来的组件
+这个装饰器来操控被投影进来的组件
 @ContentChildren 是一个复数形式。当被投影进来的是一个组件列表的时候，我们可以用来进行操控。
+
+@ViewChild 与 @ViewChildren
+这个装饰器来操控直属的子组件
